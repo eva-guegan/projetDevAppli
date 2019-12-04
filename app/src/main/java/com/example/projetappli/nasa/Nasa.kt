@@ -6,6 +6,7 @@ import java.util.*
 data class Nasa(
     val date: Date,
     val api_key: String,
+    val hdurl: String,
     val url: String,
     val title: String,
     val explanation: String

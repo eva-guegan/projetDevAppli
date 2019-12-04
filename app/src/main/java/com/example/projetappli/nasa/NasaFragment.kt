@@ -44,7 +44,7 @@ class NasaFragment : Fragment() {
 
         nasaService.getPictureOfTheDay(
             { nasa ->
-                Picasso.get().load(nasa.url).into(view.nasaImage)
+                Picasso.get().load(nasa.hdurl).into(view.nasaImage)
                 view.nasaName.text = nasa.title
             }, { error -> TODO() }
         )

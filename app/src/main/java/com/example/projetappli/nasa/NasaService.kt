@@ -18,11 +18,10 @@ class NasaService constructor(
                 call: Call<Nasa>,
                 response: Response<Nasa>
             ) {
-                val nasa =  call
-                val nasa: Nasa = nasa.
+                val nasa = response.body()!!
                 onDone(nasa)
             }
-            override fun onFailure(call: Call<NasaResponse>, t: Throwable) {
+            override fun onFailure(call: Call<Nasa>, t: Throwable) {
                 onError(t)
             }
         })
