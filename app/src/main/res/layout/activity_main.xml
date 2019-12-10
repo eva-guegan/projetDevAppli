@@ -36,7 +36,7 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="115dp"
-                android:layout_height="69dp"
+                android:layout_height="68dp"
                 android:contentDescription="@string/hide_bottom_view_on_scroll_behavior"
                 app:srcCompat="@drawable/nasa_logo" />
 
@@ -50,11 +50,56 @@
 
         <com.google.android.flexbox.FlexboxLayout
             android:id="@+id/flexbox"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="411dp"
+            android:layout_height="676dp"
             app:flexWrap="wrap"
             app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginBottom="596dp"
+            android:text="La NASA :"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="338dp"
+            android:layout_height="95dp"
+            android:text="     National Aeronautics and Space Administration est une agence gouvernemental responsable du programme spatial des Etats-Unis."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/flexbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.215" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="338dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="224dp"
+            android:text="     Créer à la fin des année 50, la NASA travaille dans le domaine du vol spatial habité, de l’exploration du Système solaire et de la recherche spatiale"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
