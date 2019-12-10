@@ -12,49 +12,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-
-        android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:background="#161960">
-
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-
-            app:toolbarId="@+id/toolbar">
-
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="115dp"
-                android:layout_height="68dp"
-                android:contentDescription="@string/hide_bottom_view_on_scroll_behavior"
-                app:srcCompat="@drawable/nasa_logo" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="#161960"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+                app:toolbarId="@+id/toolbar">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="115dp"
+                    android:layout_height="68dp"
+                    android:contentDescription="@string/hide_bottom_view_on_scroll_behavior"
+                    app:srcCompat="@drawable/nasa_logo" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
         <com.google.android.flexbox.FlexboxLayout
             android:id="@+id/flexbox"
-            android:layout_width="411dp"
-            android:layout_height="676dp"
+            android:layout_width="410dp"
+            android:layout_height="730dp"
             app:flexWrap="wrap"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="78dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView"
